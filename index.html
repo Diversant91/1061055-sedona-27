@@ -26,7 +26,7 @@
     <main>
 
         <section>
-            <h1>Седона</h1>
+            <h1  class="visually-hidden">Седона</h1>
             <div>
             <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
             </div>
@@ -93,13 +93,12 @@
         </section>
 
         <section>
-            <h2>Заинтересовались?</h2>
+            <h2 >Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </section>
 
-        <!-- <section>
-    Форма + карта
-</section> -->
+
+
 
     </main>
 
@@ -134,6 +133,42 @@
             </a>
         </div>
     </footer>
+<section  class="visually-hidden">
+    <h2  class="visually-hidden">Форма поиска гостиницы</h2>
+    <p>Поиск гостиницы в Седоне</p>
+    <form method="get" action="#">
+        <div>
+        <p>
+        <label for="start date">Дата заезда:</label>       
+<!--         как можно сделать дату в формате "24 апреля 2017"      -->
+        <input type="date" name="start date" id="start date" value="2019-04-24">
+        </p>
+
+        <p>
+        <label for="finish date">Дата выезд:</label>
+        <input type="date" name="finish date" id="finish date" value="2019-07-04">
+        </p>
+        <p>
+        <label for="adults">Взрослые:</label>   
+        <input type="number" name="adults" id="adults" value="2">
+<!--         Не понимаю как реализовать -  / + так что бы данные число в поел менялось -->
+        <button> - </button>
+        <button> + </button>       
+        </p>
+        <p>
+        <label for="children">Дети:</label>
+        <input type="number" name="children" id="children" value="0">
+        <button> - </button>
+        <button> + </button>
+        </p>
+        <button type="submit"> Найти </button>
+</div>
+    </form>
+
+
+
+</section>
+
 </body>
 
 </html>
