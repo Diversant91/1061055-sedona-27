@@ -26,13 +26,13 @@
     <main>
 
         <section>
-            <h1  class="visually-hidden">Седона</h1>
+            <h1 class="visually-hidden">Седона</h1>
             <div>
-            <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+                <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
             </div>
             <h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-           
+
             <!-- 5 причин -->
 
             <div>
@@ -93,37 +93,43 @@
         </section>
 
         <section>
-            <h2 >Заинтересовались?</h2>
+            <h2 class="visually-hidden">Поиск гостиницы</h2>
+            <STRONG>Заинтересовались?</STRONG>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <!-- Какой вариант является правильным \ подходящим и почему?
+            <button type="submit">Поиск гостиницы в Седоне</button> 
+            <button type="button">Поиск гостиницы в Седоне</button>
+            <a href="#">Поиск гостиницы в Седоне</a> -->
         </section>
-
-
-
 
     </main>
 
     <footer>
         <div>
-            <a href="#"><p>#visitSEDONA</p></a>
-            <a href="tel:+74956660266"><p>Тел: +7(495) 666-02-66</p></a>
+            <a href="#">
+                <p>#visitSEDONA</p>
+            </a>
+            <a href="tel:+74956660266">
+                <p>Тел: +7(495) 666-02-66</p>
+            </a>
         </div>
         <div>
             <ul>
                 <li>
                     <a href="https://twitter.com/">
-                    <img src="img/twitter.svg" width="17" height="15" alt="Твиттер"> 
-               </a>
-            </li>
+                        <img src="img/twitter.svg" width="17" height="15" alt="Твиттер">
+                    </a>
+                </li>
                 <li>
                     <a href="https://www.facebook.com/">
-                    <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"> 
+                        <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
                     </a>
-        </li>
+                </li>
                 <li>
                     <a href="https://www.youtube.com/">
-                   <img src="img/youtube.svg" width="20" height="16" alt="Youtube"> 
-                 </a>
-            </li>
+                        <img src="img/youtube.svg" width="20" height="16" alt="Youtube">
+                    </a>
+                </li>
             </ul>
         </div>
         <div>
@@ -133,41 +139,37 @@
             </a>
         </div>
     </footer>
-<section  class="visually-hidden">
-    <h2  class="visually-hidden">Форма поиска гостиницы</h2>
-    <p>Поиск гостиницы в Седоне</p>
-    <form method="get" action="#">
-        <div>
-        <p>
-        <label for="start date">Дата заезда:</label>       
-<!--         как можно сделать дату в формате "24 апреля 2017"      -->
-        <input type="date" name="start date" id="start date" value="2019-04-24">
-        </p>
+    <section class="visually-hidden">
+        <form method="get" action="#">
+            <div>
+                <p>
+                    <label for="start-date">Дата заезда:</label>
+                    <input type="text" name="start-date" id="start-date" value="24 апреля 2017">
+                </p>
 
-        <p>
-        <label for="finish date">Дата выезд:</label>
-        <input type="date" name="finish date" id="finish date" value="2019-07-04">
-        </p>
-        <p>
-        <label for="adults">Взрослые:</label>   
-        <input type="number" name="adults" id="adults" value="2">
-<!--         Не понимаю как реализовать -  / + так что бы данные число в поел менялось -->
-        <button> - </button>
-        <button> + </button>       
-        </p>
-        <p>
-        <label for="children">Дети:</label>
-        <input type="number" name="children" id="children" value="0">
-        <button> - </button>
-        <button> + </button>
-        </p>
-        <button type="submit"> Найти </button>
-</div>
-    </form>
+                <p>
+                    <label for="finish-date">Дата выезда:</label>
+                    <input type="text" name="finish-date" id="finish-date" value="4 июля 2017">
+                </p>
+                <p>
+                    <label for="adults">Взрослые:</label>
+                    <button> - </button>
+                    <input type="number" name="adults" id="adults" value="2">
+                    <!--         Не понимаю как реализовать -  / + так что бы данные число в поел менялось -->
 
+                    <button> + </button>
+                </p>
+                <p>
+                    <label for="children">Дети:</label>
+                    <button> - </button>
+                    <input type="number" name="children" id="children" value="0">
+                    <button> + </button>
+                </p>
+                <button type="submit"> Найти </button>
+            </div>
+        </form>
 
-
-</section>
+    </section>
 
 </body>
 

@@ -26,67 +26,65 @@
 
     <main>
         <section>
-            <h1  class="visually-hidden">Страница выбора отелей</h1>
+            <h1 class="visually-hidden">Страница выбора отелей</h1>
 
-<form method="get" action="#">
-    <fieldset>
-     <legend> Инфраструктура: </legend>
-    <ul>
-        <li>
-            <input type="checkbox" name="pool" id="pool" checked>
-            <label for="pool">Бассейн</label>
-        </li>
-        <li>
-            <input type="checkbox" name="parking" id="parking">
-            <label for="parking">Парковка</label>            
-        </li>
-        <li>
-            <input type="checkbox" name="wi-fi" id="wi-fi">
-            <label for="wi-fi">WI-FI</label>             
-        </li>
-    </ul>
-    </fieldset>
-    <fieldset>
-     <legend> Тип жилья: </legend>
-    <ul>
-        <li>
-            <input type="checkbox" name="hotel" id="hotel" checked>
-            <label for="hotel">Гостиница</label>
-        </li>
-        <li>
-            <input type="checkbox" name="motel" id="motel" checked>
-            <label for="motel">Мотель</label>            
-        </li>
-        <li>
-            <input type="checkbox" name="apartments" id="apartments" checked>
-            <label for="apartments">Апартаменты</label>             
-        </li>
-    </ul>
-    </fieldset>
-    <fieldset>
-        <legend> Стоимость в сути (р):</legend>
+            <form method="get" action="#">
+                <fieldset>
+                    <legend> Инфраструктура: </legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="pool" id="pool" value="pool" checked>
+                            <label for="pool">Бассейн</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="parking" id="parking" value="parking">
+                            <label for="parking">Парковка</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="wi-fi" id="wi-fi" value="wi-fi">
+                            <label for="wi-fi">WI-FI</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend> Тип жилья: </legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="hotel" id="hotel" value="hotel" checked>
+                            <label for="hotel">Гостиница</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="motel" id="motel" value="motel" checked>
+                            <label for="motel">Мотель</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="apartments" id="apartments" value="apartments" checked>
+                            <label for="apartments">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend> Стоимость в сути (р):</legend>
 
-            <label> от 
-                <input type="text" name="min" value="0">
-            </label>
-            <label> до 
-                <input type="text" name="max" value="3000">
-            </label>
-<p>
-            <input type="range" name="cost"  min="0" max="4000" step="1000">
-        </p>
-    </fieldset>
-
-
-
-</form>
+                    <label> от
+                        <input type="text" name="min" value="0">
+                    </label>
+                    <label> до
+                        <input type="text" name="max" value="3000">
+                    </label>
+                    <p>
+                        <input type="range" name="cost" min="0" max="4000" step="1000">
+                    </p>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
 
         </section>
 
         <!-- Сортировка -->
 
         <section>
-            <h2  class="visually-hidden">Сортировка отелей</h2>
+            <h2 class="visually-hidden">Сортировка отелей</h2>
             <div>
                 <b>Найдено:3</b>
                 <p>Сортировка:</p>
@@ -110,7 +108,7 @@
         <!-- Результат поиска -->
 
         <section>
-            <h2  class="visually-hidden">Список отелей</h2>
+            <h2 class="visually-hidden">Список отелей</h2>
             <ul>
                 <li>
                     <div>
@@ -178,25 +176,29 @@
 
     <footer>
         <div>
-            <a href="#"><p>#visitSEDONA</p></a>
-            <a href="tel:+74956660266"><p>Тел: +7(495) 666-02-66</p></a>
+            <a href="#">
+                <p>#visitSEDONA</p>
+            </a>
+            <a href="tel:+74956660266">
+                <p>Тел: +7(495) 666-02-66</p>
+            </a>
         </div>
         <div>
             <ul>
                 <li>
                     <a href="https://twitter.com/">
-                    <img src="img/twitter.svg" width="17" height="15" alt="Твиттер"> 
-               </a>
-            </li>
+                        <img src="img/twitter.svg" width="17" height="15" alt="Твиттер">
+                    </a>
+                </li>
                 <li>
                     <a href="https://www.facebook.com/">
-                    <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"> 
+                        <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
                     </a>
-        </li>
+                </li>
                 <li>
                     <a href="https://www.youtube.com/">
-                   <img src="img/youtube.svg" width="20" height="16" alt="Youtube"> 
-                 </a>
+                        <img src="img/youtube.svg" width="20" height="16" alt="Youtube">
+                    </a>
             </ul>
         </div>
         <div>
