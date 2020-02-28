@@ -11,9 +11,9 @@ body {
  }
 
 /*  Общие стили  */
-.grey-back {
-  width: 1280px;
-  background-color: #f2f2f2;
+.body {
+width: 1280px;
+background-color: #f2f2f2;
 }
 
 .white-back {
