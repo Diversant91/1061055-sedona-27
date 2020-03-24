@@ -434,8 +434,8 @@ a {
 }
 
 .map {
- padding: 0px;
- margin: 0px;
+ margin-top: auto;
+ border: 0;
 }
 
 .hotel-search button {
